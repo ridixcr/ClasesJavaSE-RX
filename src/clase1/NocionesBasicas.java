@@ -4,7 +4,7 @@ package clase1;
 public class NocionesBasicas {
 
     public static void main(String[] args) {
-        System.out.println("Hola Mundo Java");
+        System.out.println("Hola Mundo Java".toCharArray());
         //<editor-fold defaultstate="collapsed" desc="PRIMITIVOS">        
         //byte,short,int,long
         byte nb = 127;
@@ -128,13 +128,7 @@ public class NocionesBasicas {
             rin = in2 / in1;
             System.out.println(in2 + " / " + in1 + " = " + rin);
         }
-        //</editor-fold>
-        //<editor-fold defaultstate="collapsed" desc="DE CADENAS">
-            //</editor-fold>
-        //<editor-fold defaultstate="collapsed" desc="DE ARRAYS/MATRICES">
-        //</editor-fold>
-        //<editor-fold defaultstate="collapsed" desc="DE LISTAS DE DATOS">
-        //</editor-fold>
+        //</editor-fold>        
         //</editor-fold>
     }
 }

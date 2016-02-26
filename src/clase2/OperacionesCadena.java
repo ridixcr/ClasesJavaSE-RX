@@ -56,7 +56,7 @@ public class OperacionesCadena {
         Double[][] info = new Double[][]{{1.0,2.0,6.0}
                                         ,{2.0,3.0,4.0}};
         String[][][] cad = new String[][][]{{{"A","B","C"},{"1","2","3"},{"#","!","%"}}
-                              ,{{"<",">","="},{";",".",":"},{"@","&","$"}}};
+                                           ,{{"<",">","="},{";",".",":"},{"@","&","$"}}};
         //MATRIZ DE N DIMENSIONES
         //...
         //MATRICES VACIAS DECLARADAS
@@ -77,6 +77,20 @@ public class OperacionesCadena {
         //</editor-fold>        
         //</editor-fold>
         //<editor-fold defaultstate="collapsed" desc="ESTRUCTURAS DE CONTROL">
+        //IF-ELSE,WHILE,DO WHILE,FOR,SWITH,
+        //<editor-fold defaultstate="collapsed" desc="IF-ELSE">        
+        int var1=3, var2=4;
+        if(var1==var2){
+            System.out.println("Son iguales");
+        }else if(var1<var2){
+            System.out.println("V1 es menor que v2");
+        } else if(var1>var2){
+            System.out.println("var1 es mayor que v2");
+        }else{
+            System.out.println("no definido");
+        }
+        //</editor-fold>
+        
         //</editor-fold>
     }
 }

@@ -56,7 +56,7 @@ public class OperacionesCadena {
         Double[][] info = new Double[][]{{1.0,2.0,6.0}
                                         ,{2.0,3.0,4.0}};
         String[][][] cad = new String[][][]{{{"A","B","C"},{"1","2","3"},{"#","!","%"}}
-                              ,{{"<",">","="},{";",".",":"},{"@","&","$"}}};
+                                           ,{{"<",">","="},{";",".",":"},{"@","&","$"}}};
         //MATRIZ DE N DIMENSIONES
         //...
         //MATRICES VACIAS DECLARADAS
@@ -75,8 +75,6 @@ public class OperacionesCadena {
         System.out.println(info[1]);
         System.out.println(info[0][0]);        
         //</editor-fold>        
-        //</editor-fold>
-        //<editor-fold defaultstate="collapsed" desc="ESTRUCTURAS DE CONTROL">
         //</editor-fold>
     }
 }

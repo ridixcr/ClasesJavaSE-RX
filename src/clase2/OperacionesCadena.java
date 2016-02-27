@@ -76,5 +76,21 @@ public class OperacionesCadena {
         System.out.println(info[0][0]);        
         //</editor-fold>        
         //</editor-fold>
+        //<editor-fold defaultstate="collapsed" desc="ESTRUCTURAS DE CONTROL">
+        //IF-ELSE,WHILE,DO WHILE,FOR,SWITH,
+        //<editor-fold defaultstate="collapsed" desc="IF-ELSE">        
+        int var1=3, var2=4;
+        if(var1==var2){
+            System.out.println("Son iguales");
+        }else if(var1<var2){
+            System.out.println("V1 es menor que v2");
+        } else if(var1>var2){
+            System.out.println("var1 es mayor que v2");
+        }else{
+            System.out.println("no definido");
+        }
+        //</editor-fold>
+        
+        //</editor-fold>
     }
 }

@@ -31,7 +31,7 @@ public class EstructurasControl {
         //<editor-fold defaultstate="collapsed" desc="DO-WHILE">
         BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
         System.out.println("Ingrese una opción del menú");
-        
+
         int rsp = -1;
         do {
             System.out.println("1 : Registrar");
@@ -39,7 +39,7 @@ public class EstructurasControl {
             System.out.println("3 : Eliminar");
             System.out.println("0 : Salir");
             System.out.print("Opcion = ");
-            
+
             //<editor-fold defaultstate="collapsed" desc="BLOQUE LECTURA Y VALIDACION">
             boolean bandera = false;
             while (bandera == false) {
@@ -51,8 +51,58 @@ public class EstructurasControl {
                 }
             }
             //</editor-fold>
-            
+
         } while ((rsp < 1 || rsp > 4) && rsp != 0);
+        //</editor-fold>
+        //<editor-fold defaultstate="collapsed" desc="FOR">
+        for (int i = 1; i <= 20; i++) {
+            if (i % 2 == 0) {
+                System.out.println(i);
+            }
+        }
+        //</editor-fold>
+        //<editor-fold defaultstate="collapsed" desc="SWITCH">
+        //CONVERSOR-NUMERO(1-7) A DIAS
+        BufferedReader b = new BufferedReader(new InputStreamReader(System.in));
+        System.out.print("Ingrese un numero entre 1 -7 ? ");
+        int op = 0;
+        //<editor-fold defaultstate="collapsed" desc="VALIDADOR DE LECTURA NUMEO ENTERO">
+        boolean bandera = false;
+        while (bandera == false) {
+            try {
+                op = Integer.parseInt(b.readLine().trim());
+                bandera = true;
+            } catch (Exception e) {
+                bandera = false;
+            }
+        }
+        //</editor-fold>
+        switch (op) {
+            case 1:
+                System.out.println("Lunes");
+                break;
+            case 2:
+                System.out.println("Martes");
+                break;
+            case 3:
+                System.out.println("Miercoles");
+                break;
+            case 4:
+                System.out.println("Jueves");
+                break;
+            case 5:
+                System.out.println("Viernes");
+                break;
+            case 6:
+                System.out.println("Sabado");
+                break;
+            case 7:
+                System.out.println("Domingo");
+                break;
+            default:
+                System.out.println("Numero Invalido");
+                break;
+        }
         //</editor-fold>
         //</editor-fold>
     }

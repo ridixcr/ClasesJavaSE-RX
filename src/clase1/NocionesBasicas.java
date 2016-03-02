@@ -1,4 +1,4 @@
-package clase1;
+ package clase1;
 
 
 public class NocionesBasicas {

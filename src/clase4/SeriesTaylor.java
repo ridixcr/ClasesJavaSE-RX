@@ -9,26 +9,28 @@ public class SeriesTaylor {
     public static String cosX_N(long n) {
         String s = "";
             for (int k = 0; k <= n; k++) {  
-                if(k==0){
-                    s+="1 ";
-                }else{
-                    s+=evaluarSigno(k)+" ((X^"+(2*k)+")/"+(2*k)+"!) ";
-                }
+//                if(k==0){
+//                    s+="1 ";
+//                }else{
+//                    s+=evaluarSigno(k)+" ((X^"+(2*k)+")/"+(2*k)+"!) ";
+//                }
+                s+=(k==0)?"1":evaluarSigno(k)+" ((X^"+(2*k)+")/"+(2*k)+"!) ";
             }
         return s;
     }
     
     public static String evaluarSigno(int k){
         //<editor-fold defaultstate="collapsed" desc="CUERPO">      
-        if (k==0) {
-            return "";
-        } else {
-            if (potencia(-1,k)>0) {
-                return "+";
-            } else {
-                return "-";
-            }
-        }
+//        if (k==0) {
+//            return "";
+//        } else {
+//            if (potencia(-1,k)>0) {
+//                return "+";
+//            } else {
+//                return "-";
+//            }
+//        }
+        return (k==0)? "":(potencia(-1,k)>0)?"+":"-";
         //</editor-fold>
     }
 
@@ -40,11 +42,12 @@ public class SeriesTaylor {
         //        }
         //        return r;
 
-        if (exp == 0) {
-            return 1;
-        } else {
-            return base * potencia(base, exp - 1);
-        }
+//        if (exp == 0) {
+//            return 1;
+//        } else {
+//            return base * potencia(base, exp - 1);
+//        }
+        return (exp==0)? 1:base*potencia(base, exp-1);
         //</editor-fold>
     }
 
@@ -66,11 +69,13 @@ public class SeriesTaylor {
         //        }
         //        
         //        return r;
-        if (n == 0) {
-            return 1;
-        } else {
-            return n * factorial(n - 1);
-        }
+//        if (n == 0) {
+//            return 1;
+//        } else {
+//            return n * factorial(n - 1);
+//        }
+        
+        return (n==0)? 1: n*factorial(n-1);
         //</editor-fold>
     }
 

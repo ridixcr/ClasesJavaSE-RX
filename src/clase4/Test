@@ -1,0 +1,7 @@
+//System.out.println(potencia(-1,6));
+        //long in = System.currentTimeMillis();
+        //System.out.println(potencia(-1, 6));
+        //System.out.println(factorial(10));
+        //long f = System.currentTimeMillis();
+        //long tiempo = f - in;
+        //System.out.println("se ha llenado el arreglo en " + tiempo + " ms\n");
